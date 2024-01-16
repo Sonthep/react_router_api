@@ -1,13 +1,14 @@
 
-import About from "../components/about";
-import ShoppingCart from "../components/shoppingCart";
+import About from "../components/googleMap";
 import Home from "../components/home";
+import NewsList from "../components/news/news";
+import GoogleMap from "../components/googleMap";
 
 
 const routes = [
   { path: "/", element: <Home /> },
-  { path: "/about", element: <About /> },
-  { path: "/shoppingCart", element: <ShoppingCart /> },
+  { path: "/googleMap", element: <GoogleMap /> },
+  { path: "/news", element: <NewsList /> },
 
 ];
 

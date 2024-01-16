@@ -1,6 +1,6 @@
 
 
-const About = () => {
+const GoogleMap = () => {
     
   
     return (
@@ -10,4 +10,4 @@ const About = () => {
     );
   };
 
-  export default About;
+  export default GoogleMap;

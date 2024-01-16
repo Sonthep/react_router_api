@@ -24,6 +24,12 @@ const Home = () => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
   };
 
+  const Store = ({ cart, removeFromCart }) => (
+    <div className='flex justify-center'>
+      <ShoppingCart cart={cart} removeFromCart={removeFromCart} />
+    </div>
+  );
+
   if (error) {
     console.error('Error fetching data:', error);
     return <div>Error loading data</div>;
@@ -78,11 +84,15 @@ const Home = () => {
       <div className='flex justify-center'>
         <Product />
       </div>
-      <div className='flex justify-center'>
-        <ShoppingCart cart={cart} removeFromCart={removeFromCart} />
-      </div>
+      <Store cart={cart} removeFromCart={removeFromCart} />
     </div>
   );
 };
 
+export const Store = ({ cart, removeFromCart }) => (
+  <div className='flex justify-center'>
+    <ShoppingCart cart={cart} removeFromCart={removeFromCart} />
+  </div>
+);
 export default Home;
+
