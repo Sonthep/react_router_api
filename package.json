@@ -10,13 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "axios": "^1.6.5",
     "flowbite-react": "^0.7.2",
+    "google-map-react": "^2.2.1",
+    "ol": "^8.2.0",
+    "openlayers": "^4.6.5",
     "preline": "^2.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-map-wrapper": "^1.0.3",
     "react-router-dom": "^6.21.2",
-    "swr": "^2.2.4"
+    "swr": "^2.2.4",
+    "use-places-autocomplete": "^4.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.18",
